@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "c536db40-93e8-4565-8d83-e2b9854d5dde",
+		"name": "TestsMicrocommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/Produits",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nom\":\"Chèvre\",\n\t\"prix\":0,\n\t\"prixAchat\":1100,\n\t\"id\":7\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/Produits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"Produits"
+					]
+				},
+				"description": "Validation du prix de vente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/AdminProduits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/AdminProduits",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"AdminProduits"
+					]
+				},
+				"description": "Affichage de la marge "
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ProduitsTrie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/ProduitsTrie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProduitsTrie"
+					]
+				},
+				"description": "Tri par ordre alphabétique"
+			},
+			"response": []
+		}
+	]
+}
